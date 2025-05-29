@@ -1,10 +1,16 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const GlowCard = ({ children, identifier }) => {
+  const [isMounted, setIsMounted] = useState(false);
+
   useEffect(() => {
-    if (typeof document === "undefined") return;
+    setIsMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isMounted) return;
 
     const CONTAINER = document.querySelector(`.glow-container-${identifier}`);
     const CARDS = document.querySelectorAll(`.glow-card-${identifier}`);
@@ -51,8 +57,6 @@ const GlowCard = ({ children, identifier }) => {
       }
     };
 
-    document.body.addEventListener("pointermove", UPDATE);
-
     const RESTYLE = () => {
       CONTAINER.style.setProperty("--gap", CONFIG.gap);
       CONTAINER.style.setProperty("--blur", CONFIG.blur);
@@ -63,13 +67,14 @@ const GlowCard = ({ children, identifier }) => {
       );
     };
 
+    document.body.addEventListener("pointermove", UPDATE);
     RESTYLE();
     UPDATE();
 
     return () => {
       document.body.removeEventListener("pointermove", UPDATE);
     };
-  }, [identifier]);
+  }, [isMounted, identifier]);
 
   return (
     <div className={`glow-container-${identifier} glow-container`}>
