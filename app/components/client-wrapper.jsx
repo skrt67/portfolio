@@ -21,6 +21,14 @@ const Projects = dynamic(() => import("./homepage/projects"), {
   ssr: false,
 });
 
+const Education = dynamic(() => import("./homepage/education"), {
+  ssr: false,
+});
+
+const ContactSection = dynamic(() => import("./homepage/contact"), {
+  ssr: false,
+});
+
 export default function ClientWrapper() {
   return (
     <>
@@ -31,6 +39,8 @@ export default function ClientWrapper() {
       <Experience />
       <Skills />
       <Projects />
+      <Education />
+      <ContactSection />
     </>
   );
 } 
