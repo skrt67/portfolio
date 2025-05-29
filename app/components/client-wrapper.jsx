@@ -13,6 +13,14 @@ const Experience = dynamic(() => import("./homepage/experience"), {
   ssr: false,
 });
 
+const Skills = dynamic(() => import("./homepage/skills"), {
+  ssr: false,
+});
+
+const Projects = dynamic(() => import("./homepage/projects"), {
+  ssr: false,
+});
+
 export default function ClientWrapper() {
   return (
     <>
@@ -21,6 +29,8 @@ export default function ClientWrapper() {
       <GTM />
       <AboutSection />
       <Experience />
+      <Skills />
+      <Projects />
     </>
   );
 } 
