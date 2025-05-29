@@ -5,6 +5,10 @@ import ScrollToTop from "./helper/scroll-to-top";
 import GTM from "./helper/gtm";
 import dynamic from "next/dynamic";
 
+const HeroSection = dynamic(() => import("./homepage/hero-section"), {
+  ssr: false,
+});
+
 const AboutSection = dynamic(() => import("./homepage/about"), {
   ssr: false,
 });
@@ -29,18 +33,21 @@ const ContactSection = dynamic(() => import("./homepage/contact"), {
   ssr: false,
 });
 
-export default function ClientWrapper() {
+export default function ClientComponents() {
   return (
     <>
       <ToastContainer />
       <ScrollToTop />
       <GTM />
-      <AboutSection />
-      <Experience />
-      <Skills />
-      <Projects />
-      <Education />
-      <ContactSection />
+      <div className="flex flex-col">
+        <HeroSection />
+        <AboutSection />
+        <Experience />
+        <Skills />
+        <Projects />
+        <Education />
+        <ContactSection />
+      </div>
     </>
   );
 } 

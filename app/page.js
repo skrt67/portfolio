@@ -1,12 +1,10 @@
 import { personalData } from "@/utils/data/personal-data";
-import ClientWrapper from "./components/client-wrapper";
-import HeroWrapper from "./components/hero-wrapper";
+import ClientComponents from "./components/client-components";
 
 export default function Home() {
   return (
     <div suppressHydrationWarning>
-      <HeroWrapper />
-      <ClientWrapper />
+      <ClientComponents />
     </div>
   );
 }
