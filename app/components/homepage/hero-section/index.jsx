@@ -44,7 +44,7 @@ function HeroSection() {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500">
               {personalData.name}
             </span>
-            , I'm a
+            , I&apos;m a
             <br />
             Professional{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-green-500">
@@ -106,21 +106,21 @@ function HeroSection() {
                 <div className="ml-4">
                   <span className="text-white">skills:</span>
                   <span className="text-gray-400"> [</span>
-                  <span className="text-yellow-300">'HTML'</span>
+                  <span className="text-yellow-300">&apos;HTML&apos;</span>
                   <span className="text-gray-400">,</span>
-                  <span className="text-yellow-300"> 'CSS'</span>
+                  <span className="text-yellow-300"> &apos;CSS&apos;</span>
                   <span className="text-gray-400">,</span>
-                  <span className="text-yellow-300"> 'JavaScript'</span>
-                  <span className="text-gray-400">,</span>
-                  <br />
-                  <span className="ml-8 text-yellow-300">'PHP'</span>
-                  <span className="text-gray-400">,</span>
-                  <span className="text-yellow-300"> 'Symfony'</span>
-                  <span className="text-gray-400">,</span>
-                  <span className="text-yellow-300"> 'MySQL'</span>
+                  <span className="text-yellow-300"> &apos;JavaScript&apos;</span>
                   <span className="text-gray-400">,</span>
                   <br />
-                  <span className="ml-8 text-yellow-300">'WordPress'</span>
+                  <span className="ml-8 text-yellow-300">&apos;PHP&apos;</span>
+                  <span className="text-gray-400">,</span>
+                  <span className="text-yellow-300"> &apos;Symfony&apos;</span>
+                  <span className="text-gray-400">,</span>
+                  <span className="text-yellow-300"> &apos;MySQL&apos;</span>
+                  <span className="text-gray-400">,</span>
+                  <br />
+                  <span className="ml-8 text-yellow-300">&apos;WordPress&apos;</span>
                   <span className="text-gray-400">],</span>
                 </div>
                 <div className="ml-4">
