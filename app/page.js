@@ -12,8 +12,8 @@ export default function Home() {
     <div suppressHydrationWarning>
       <HeroSection />
       <AboutSection />
-      <Experience />
-      {/* <Skills />
+      {/* <Experience />
+      <Skills />
       <Projects />
       <Education />
       <ContactSection /> */}
