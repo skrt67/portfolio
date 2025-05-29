@@ -1,6 +1,10 @@
 import { personalData } from "@/utils/data/personal-data";
-import HeroSection from "./components/homepage/hero-section";
+import dynamic from "next/dynamic";
 import ClientWrapper from "./components/client-wrapper";
+
+const HeroSection = dynamic(() => import("./components/homepage/hero-section"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
