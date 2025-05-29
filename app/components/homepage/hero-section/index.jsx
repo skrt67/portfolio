@@ -38,26 +38,25 @@ function HeroSection() {
       <div className="w-full flex flex-col md:flex-row items-start justify-between gap-10">
         <div className="w-full md:w-1/2 space-y-6">
           <h1 className="text-4xl md:text-6xl font-bold">
-            Hello,
+            Bonjour,
             <br />
-            This is{" "}
+            Je suis{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500">
               {personalData.name}
             </span>
-            , I&apos;m a
+            ,
             <br />
-            Professional{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-green-500">
-              Software Developer
+              Étudiant Développeur
             </span>
             .
           </h1>
 
           <div className="flex gap-4">
-            <Link href="https://github.com/altandeepeli" target="_blank">
+            <Link href="https://github.com/skrt67" target="_blank">
               <BsGithub className="w-8 h-8 text-pink-500 hover:text-purple-500 transition-colors" />
             </Link>
-            <Link href="https://linkedin.com/in/altandepeli" target="_blank">
+            <Link href="https://www.linkedin.com/in/altan-depeli-508a052b9/" target="_blank">
               <BsLinkedin className="w-8 h-8 text-pink-500 hover:text-purple-500 transition-colors" />
             </Link>
             <Link href="https://facebook.com/altandepeli" target="_blank">
@@ -73,14 +72,14 @@ function HeroSection() {
               href="#contact"
               className="px-6 py-3 bg-[#1a1a1a] border border-[#333] rounded-full text-white hover:bg-[#252525] transition-colors"
             >
-              CONTACT ME 👋
+              ME CONTACTER 👋
             </Link>
             <Link
               href="/CV_DEPELI_Altan.pdf"
               target="_blank"
               className="px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full text-white hover:opacity-90 transition-opacity"
             >
-              GET RESUME ↓
+              MON CV ↓
             </Link>
           </div>
         </div>
@@ -96,15 +95,15 @@ function HeroSection() {
               <code className="text-sm md:text-base">
                 <div>
                   <span className="text-pink-500">const</span>
-                  <span className="text-white"> coder = </span>
+                  <span className="text-white"> etudiant = </span>
                   <span className="text-gray-400">{"{"}</span>
                 </div>
                 <div className="ml-4">
-                  <span className="text-white">name:</span>
+                  <span className="text-white">nom:</span>
                   <span className="text-yellow-300"> &apos;{personalData.name}&apos;,</span>
                 </div>
                 <div className="ml-4">
-                  <span className="text-white">skills:</span>
+                  <span className="text-white">compétences:</span>
                   <span className="text-gray-400"> [</span>
                   <span className="text-yellow-300">&apos;HTML&apos;</span>
                   <span className="text-gray-400">,</span>
@@ -124,25 +123,24 @@ function HeroSection() {
                   <span className="text-gray-400">],</span>
                 </div>
                 <div className="ml-4">
-                  <span className="text-white">hardWorker:</span>
+                  <span className="text-white">passionné:</span>
                   <span className="text-orange-400"> true</span>
                   <span className="text-gray-400">,</span>
                 </div>
                 <div className="ml-4">
-                  <span className="text-white">quickLearner:</span>
+                  <span className="text-white">curieux:</span>
                   <span className="text-orange-400"> true</span>
                   <span className="text-gray-400">,</span>
                 </div>
                 <div className="ml-4">
-                  <span className="text-white">problemSolver:</span>
+                  <span className="text-white">motivé:</span>
                   <span className="text-orange-400"> true</span>
                   <span className="text-gray-400">,</span>
                 </div>
                 <div className="ml-4">
-                  <span className="text-green-400">hireable:</span>
+                  <span className="text-green-400">recherche:</span>
                   <span className="text-orange-400"> function</span>
-                  <span className="text-gray-400">() {"{}"}</span>
-                  <span className="text-orange-400"> {"{"}</span>
+                  <span className="text-gray-400">() {"{"}</span>
                 </div>
                 <div className="ml-8">
                   <span className="text-orange-400">return</span>
@@ -150,17 +148,17 @@ function HeroSection() {
                 </div>
                 <div className="ml-12">
                   <span className="text-cyan-400">this</span>
-                  <span className="text-white">.hardWorker</span>
+                  <span className="text-white">.passionné</span>
                   <span className="text-yellow-300"> &&</span>
                 </div>
                 <div className="ml-12">
                   <span className="text-cyan-400">this</span>
-                  <span className="text-white">.problemSolver</span>
+                  <span className="text-white">.motivé</span>
                   <span className="text-yellow-300"> &&</span>
                 </div>
                 <div className="ml-12">
                   <span className="text-cyan-400">this</span>
-                  <span className="text-white">.skills.length</span>
+                  <span className="text-white">.compétences.length</span>
                   <span className="text-yellow-300"> &gt;=</span>
                   <span className="text-orange-400"> 5</span>
                 </div>
