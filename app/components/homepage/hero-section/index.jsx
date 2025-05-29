@@ -9,22 +9,35 @@ import { FaFacebook, FaTwitterSquare } from "react-icons/fa";
 import { MdDownload } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
 import { SiLeetcode } from "react-icons/si";
-import { useCallback } from "react";
-import Particles from "react-particles";
+import { useCallback, useState, useEffect } from "react";
+import dynamic from "next/dynamic";
 import { loadFull } from "tsparticles";
 import { particlesOptions } from "../../../../utils/data/particles-config";
 import GlowCard from "../../helper/glow-card";
 
+const Particles = dynamic(() => import("react-particles"), {
+  ssr: false,
+  loading: () => <></>,
+});
+
 function HeroSection() {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   const particlesInit = useCallback(async engine => {
     await loadFull(engine);
   }, []);
 
   return (
     <div id="home" className="relative w-full pt-20 pb-40 m-auto flex justify-center text-center flex-col items-center z-1">
-      <div className="absolute w-full h-full z-[-1]">
-        <Particles options={particlesOptions} init={particlesInit} />
-      </div>
+      {isMounted && (
+        <div className="absolute w-full h-full z-[-1]">
+          <Particles options={particlesOptions} init={particlesInit} />
+        </div>
+      )}
 
       <div className="w-[90%] md:w-[70%] lg:w-[50%] space-y-5 flex flex-col justify-center items-center">
         <div className="relative">
