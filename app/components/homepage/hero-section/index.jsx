@@ -11,7 +11,7 @@ import { RiContactsFill } from "react-icons/ri";
 import { SiLeetcode } from "react-icons/si";
 import { useCallback, useState, useEffect } from "react";
 import dynamic from "next/dynamic";
-import { loadFull } from "@tsparticles/engine";
+import { Engine } from "@tsparticles/engine";
 import { particlesOptions } from "../../../../utils/data/particles-config";
 import GlowCard from "../../helper/glow-card";
 
@@ -27,8 +27,9 @@ function HeroSection() {
     setIsMounted(true);
   }, []);
 
-  const particlesInit = useCallback(async engine => {
-    await loadFull(engine);
+  const particlesInit = useCallback(async (engine) => {
+    const { loadSlim } = await import("@tsparticles/slim");
+    await loadSlim(engine);
   }, []);
 
   return (
