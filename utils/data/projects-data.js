@@ -2,7 +2,7 @@ export const projectsData = [
   {
     id: 1,
     name: 'Trash Game',
-    description: 'Jeu web interactif de tri des déchets réalisé dans le cadre d&apos;une SAÉ. Une expérience ludique pour sensibiliser au recyclage avec système de score et de niveaux.',
+    description: 'Jeu web interactif de tri des déchets réalisé dans le cadre d\u2019une SAÉ. Une expérience ludique pour sensibiliser au recyclage avec système de score et de niveaux.',
     tools: ['HTML', 'CSS', 'PHP', 'SQL', 'Twig', 'Symfony', 'JavaScript', 'Git'],
     role: 'Développeur Full Stack',
     code: '',
@@ -11,7 +11,7 @@ export const projectsData = [
   {
     id: 2,
     name: 'Site de Couture',
-    description: 'Plateforme d&apos;échange et de réservation d&apos;objets de couture. Système complet avec gestion des catégories, authentification multi-rôles, réservations et interface d&apos;administration.',
+    description: 'Plateforme d\u2019échange et de réservation d\u2019objets de couture. Système complet avec gestion des catégories, authentification multi-rôles, réservations et interface d\u2019administration.',
     tools: ['Symfony', 'PHP', 'Twig', 'Doctrine', 'MySQL', 'CSS', 'JavaScript', 'Bootstrap'],
     role: 'Développeur Back-End',
     code: '',
@@ -20,7 +20,7 @@ export const projectsData = [
   {
     id: 3,
     name: 'La Montagne des Singes',
-    description: 'Site web pour le parc animalier de la Montagne des Singes réalisé dans le cadre d&apos;une SAÉ. Site multilingue avec présentation des espèces, informations pratiques et billetterie en ligne.',
+    description: 'Site web pour le parc animalier de la Montagne des Singes réalisé dans le cadre d\u2019une SAÉ. Site multilingue avec présentation des espèces, informations pratiques et billetterie en ligne.',
     tools: ['WordPress', 'Elementor', 'Polylang', 'Duplicator', 'CSS'],
     role: 'Développeur WordPress',
     code: '',
@@ -37,8 +37,8 @@ export const projectsData = [
   },
   {
     id: 5,
-    name: 'L’association de la SIG Strasbourg',
-    description: 'Projet de communication plurimédia en partenariat avec la SIG Strasbourg. Objectif : renforcer l&apos;image du club à travers des supports digitaux et print.',
+    name: 'L\u2019association de la SIG Strasbourg',
+    description: 'Projet de communication plurimédia en partenariat avec la SIG Strasbourg. Objectif : renforcer l\u2019image du club à travers des supports digitaux et print.',
     tools: ['Communication', 'PAO', 'Stratégie digitale', 'WordPress (optionnel)'],
     role: 'Chargé de communication / Webdesign',
     code: '',
