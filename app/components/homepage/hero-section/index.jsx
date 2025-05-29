@@ -33,7 +33,7 @@ function HeroSection() {
   }, []);
 
   return (
-    <div id="home" className="relative w-full pt-20 pb-40 m-auto flex justify-center text-center flex-col items-center z-1">
+    <div id="home" className="relative w-full pb-40 m-auto flex justify-center text-center flex-col items-center z-1">
       {isMounted && (
         <div className="absolute w-full h-full z-[-1]">
           <Particles options={particlesOptions} init={particlesInit} />
