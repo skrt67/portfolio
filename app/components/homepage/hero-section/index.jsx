@@ -11,11 +11,11 @@ import { RiContactsFill } from "react-icons/ri";
 import { SiLeetcode } from "react-icons/si";
 import { useCallback, useState, useEffect } from "react";
 import dynamic from "next/dynamic";
-import { loadFull } from "tsparticles";
+import { loadFull } from "@tsparticles/engine";
 import { particlesOptions } from "../../../../utils/data/particles-config";
 import GlowCard from "../../helper/glow-card";
 
-const Particles = dynamic(() => import("react-particles"), {
+const Particles = dynamic(() => import("@tsparticles/react"), {
   ssr: false,
   loading: () => <></>,
 });
