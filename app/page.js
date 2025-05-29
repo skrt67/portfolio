@@ -1,6 +1,3 @@
-"use client";
-
-import { useEffect, useState } from "react";
 import { personalData } from "@/utils/data/personal-data";
 import AboutSection from "./components/homepage/about";
 import ContactSection from "./components/homepage/contact";
