@@ -11,9 +11,9 @@ export default function Home() {
   return (
     <div suppressHydrationWarning>
       <HeroSection />
-      {/* <AboutSection />
+      <AboutSection />
       <Experience />
-      <Skills />
+      {/* <Skills />
       <Projects />
       <Education />
       <ContactSection /> */}
