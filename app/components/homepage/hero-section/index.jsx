@@ -1,7 +1,6 @@
 "use client";
 // @flow strict
 
-
 import { personalData } from "@/utils/data/personal-data";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,7 +12,7 @@ import { SiLeetcode } from "react-icons/si";
 import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
-import { particlesOptions } from "@/utils/data/particles-config";
+import { particlesOptions } from "../../../../utils/data/particles-config";
 import GlowCard from "../../helper/glow-card";
 
 function HeroSection() {
