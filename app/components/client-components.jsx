@@ -1,8 +1,5 @@
 "use client";
 
-import { ToastContainer } from "react-toastify";
-import ScrollToTop from "./helper/scroll-to-top";
-import GTM from "./helper/gtm";
 import dynamic from "next/dynamic";
 
 const HeroSection = dynamic(() => import("./homepage/hero-section"), {
@@ -35,19 +32,14 @@ const ContactSection = dynamic(() => import("./homepage/contact"), {
 
 export default function ClientComponents() {
   return (
-    <>
-      <ToastContainer />
-      <ScrollToTop />
-      <GTM />
-      <div className="flex flex-col">
-        <HeroSection />
-        <AboutSection />
-        <Experience />
-        <Skills />
-        <Projects />
-        <Education />
-        <ContactSection />
-      </div>
-    </>
+    <div className="flex flex-col">
+      <HeroSection />
+      <AboutSection />
+      <Experience />
+      <Skills />
+      <Projects />
+      <Education />
+      <ContactSection />
+    </div>
   );
 } 
