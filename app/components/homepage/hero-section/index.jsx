@@ -101,7 +101,7 @@ function HeroSection() {
                 </div>
                 <div className="ml-4">
                   <span className="text-white">name:</span>
-                  <span className="text-yellow-300"> '{personalData.name}',</span>
+                  <span className="text-yellow-300"> &apos;{personalData.name}&apos;,</span>
                 </div>
                 <div className="ml-4">
                   <span className="text-white">skills:</span>
