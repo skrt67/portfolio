@@ -1,6 +1,15 @@
 export const projectsData = [
   {
     id: 1,
+    name: 'Vidova.me',
+    description: 'Plateforme SaaS utilisant l\'IA pour transformer des vidéos YouTube en contenu viral multi-format. Fonctionnalités incluant transcription automatique, génération de posts pour réseaux sociaux (Twitter, LinkedIn, TikTok, Instagram) et création d\'articles de blog optimisés SEO. Tarifs flexibles : gratuit (3 vidéos/mois), Pro (14,99€/mois, vidéos illimitées) et Entreprise (sur mesure).',
+    tools: ['React', 'Next.js', 'JavaScript', 'CSS', 'IA', 'API'],
+    role: 'Développeur Full Stack',
+    code: '',
+    demo: 'https://vidova.me/',
+  },
+  {
+    id: 2,
     name: 'Trash Game',
     description: 'Jeu web interactif de tri des déchets réalisé dans le cadre d\u2019une SAÉ. Une expérience ludique pour sensibiliser au recyclage avec système de score et de niveaux.',
     tools: ['HTML', 'CSS', 'PHP', 'SQL', 'Twig', 'Symfony', 'JavaScript', 'Git'],
@@ -9,7 +18,7 @@ export const projectsData = [
     demo: 'https://trashgame.aslan.etu.mmi-unistra.fr/',
   },
   {
-    id: 2,
+    id: 3,
     name: 'Site de maillots de foot',
     description: 'Site de présentation de divers maillots de football. Projet HTML/CSS statique simple.',
     tools: ['HTML', 'CSS'],
@@ -18,7 +27,7 @@ export const projectsData = [
     demo: 'https://depeli.etu.mmi-unistra.fr/sae203/index.php',
   },
   {
-    id: 3,
+    id: 4,
     name: 'L\u2019association de la SIG Strasbourg',
     description: 'Projet de communication plurimédia en partenariat avec la SIG Strasbourg. Objectif : renforcer l\u2019image du club à travers des supports digitaux et print.',
     tools: ['Communication', 'PAO', 'Stratégie digitale', 'WordPress (optionnel)'],
@@ -27,7 +36,7 @@ export const projectsData = [
     demo: '',
   },
   {
-    id: 4,
+    id: 5,
     name: 'MusicFlow',
     description: 'Application web de streaming musical moderne avec interface utilisateur intuitive. Gestion complète de bibliothèque musicale, playlists personnalisées, système de favoris et authentification utilisateur.',
     tools: ['React', 'Next.js', 'JavaScript', 'CSS', 'Vercel'],
@@ -36,21 +45,12 @@ export const projectsData = [
     demo: 'https://musicapp-nu-flame.vercel.app/',
   },
   {
-    id: 5,
+    id: 6,
     name: 'One Piece Adventure',
     description: 'Site web interactif dédié à l\'univers One Piece avec mini-jeux, quiz de connaissances, système de combat de pirates et exploration de la Grand Line. Interface immersive pour les fans de la série.',
     tools: ['React', 'Next.js', 'JavaScript', 'CSS', 'Vercel'],
     role: 'Développeur Front-End',
     code: '',
     demo: 'https://one-piece-adventure.vercel.app/',
-  },
-  {
-    id: 6,
-    name: 'Vidova.me',
-    description: 'Plateforme SaaS utilisant l\'IA pour transformer des vidéos YouTube en contenu viral multi-format. Fonctionnalités incluant transcription automatique, génération de posts pour réseaux sociaux (Twitter, LinkedIn, TikTok, Instagram) et création d\'articles de blog optimisés SEO. Tarifs flexibles : gratuit (3 vidéos/mois), Pro (14,99€/mois, vidéos illimitées) et Entreprise (sur mesure).',
-    tools: ['React', 'Next.js', 'JavaScript', 'CSS', 'IA', 'API'],
-    role: 'Développeur Full Stack',
-    code: '',
-    demo: 'https://vidova.me/',
   },
 ];
