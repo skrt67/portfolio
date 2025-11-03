@@ -1,11 +1,13 @@
 "use client";
 import { isValidEmail } from "@/utils/check-email";
-import axios from "axios";
+import emailjs from '@emailjs/browser';
 import { useState } from "react";
 import { TbMailForward } from "react-icons/tb";
 import { toast } from "react-toastify";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 function ContactForm() {
+  const { t } = useLanguage();
   const [error, setError] = useState({ email: false, required: false });
   const [isLoading, setIsLoading] = useState(false);
   const [userInput, setUserInput] = useState({
@@ -34,19 +36,56 @@ function ContactForm() {
 
     try {
       setIsLoading(true);
-      await axios.post(
-        `${process.env.NEXT_PUBLIC_APP_URL}/api/contact`,
-        userInput
-      );
+      
+      // Configuration EmailJS
+      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || 'service_teclyx8';
+      const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || 'template_aqbu41b';
+      const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || 'uoLYWA_RX6OzN3C1u';
 
-      toast.success("Message envoyé avec succès !");
+      console.log('Configuration EmailJS:', { serviceId, templateId, publicKey });
+
+      // Paramètres du template (correspondant à votre configuration EmailJS)
+      const templateParams = {
+        to_name: 'Altan DEPELI',
+        name: userInput.name,           // Correspond à {{name}} dans votre template
+        email: userInput.email,         // Correspond à {{email}} dans votre template
+        from_name: userInput.name,      // Pour le contenu de l'email
+        from_email: userInput.email,    // Pour le contenu de l'email
+        message: userInput.message,
+        reply_to: userInput.email,
+      };
+
+      console.log('Paramètres du template:', templateParams);
+
+      // Envoi de l'email via EmailJS
+      const result = await emailjs.send(serviceId, templateId, templateParams, publicKey);
+      console.log('EmailJS result:', result);
+
+      toast.success(t('contact.form.success'));
       setUserInput({
         name: "",
         email: "",
         message: "",
       });
     } catch (error) {
-      toast.error(error?.response?.data?.message || "Erreur lors de l'envoi.");
+      console.error('Erreur EmailJS:', error);
+      console.error('Détails de l\'erreur:', {
+        status: error.status,
+        text: error.text,
+        message: error.message
+      });
+      
+      // Message d'erreur plus spécifique
+      let errorMessage = t('contact.form.error');
+      if (error.status === 400) {
+        errorMessage = 'Erreur de configuration EmailJS. Vérifiez le template.';
+      } else if (error.status === 401) {
+        errorMessage = 'Clé API EmailJS invalide.';
+      } else if (error.status === 403) {
+        errorMessage = 'Accès refusé. Vérifiez vos permissions EmailJS.';
+      }
+      
+      toast.error(errorMessage);
     } finally {
       setIsLoading(false);
     }
@@ -54,14 +93,14 @@ function ContactForm() {
 
   return (
     <div>
-      <p className="font-medium mb-5 text-[#16f2b3] text-xl uppercase">Me contacter</p>
+      <p className="font-medium mb-5 text-[#16f2b3] text-xl uppercase">{t('contact.subtitle')}</p>
       <div className="max-w-3xl text-white rounded-lg border border-[#464c6a] p-3 lg:p-5">
         <p className="text-sm text-[#d3d8e8]">
-          Si vous avez une question ou souhaitez collaborer, n’hésitez pas à me laisser un message. Je suis disponible pour toute opportunité en lien avec le développement web.
+          {t('contact.description')}
         </p>
         <div className="mt-6 flex flex-col gap-4">
           <div className="flex flex-col gap-2">
-            <label className="text-base">Votre nom :</label>
+            <label className="text-base">{t('contact.form.name')}</label>
             <input
               className="bg-[#10172d] w-full border rounded-md border-[#353a52] focus:border-[#16f2b3] px-3 py-2"
               type="text"
@@ -74,7 +113,7 @@ function ContactForm() {
           </div>
 
           <div className="flex flex-col gap-2">
-            <label className="text-base">Votre email :</label>
+            <label className="text-base">{t('contact.form.email')}</label>
             <input
               className="bg-[#10172d] w-full border rounded-md border-[#353a52] focus:border-[#16f2b3] px-3 py-2"
               type="email"
@@ -88,12 +127,12 @@ function ContactForm() {
               }}
             />
             {error.email && (
-              <p className="text-sm text-red-400">Veuillez entrer une adresse email valide !</p>
+              <p className="text-sm text-red-400">{t('contact.form.invalidEmail')}</p>
             )}
           </div>
 
           <div className="flex flex-col gap-2">
-            <label className="text-base">Votre message :</label>
+            <label className="text-base">{t('contact.form.message')}</label>
             <textarea
               className="bg-[#10172d] w-full border rounded-md border-[#353a52] focus:border-[#16f2b3] px-3 py-2"
               maxLength="500"
@@ -108,7 +147,7 @@ function ContactForm() {
 
           <div className="flex flex-col items-center gap-3">
             {error.required && (
-              <p className="text-sm text-red-400">Tous les champs sont obligatoires.</p>
+              <p className="text-sm text-red-400">{t('contact.form.required')}</p>
             )}
             <button
               className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-5 md:px-12 py-2.5 md:py-3 text-xs md:text-sm font-medium uppercase tracking-wider text-white transition-all duration-200"
@@ -116,10 +155,10 @@ function ContactForm() {
               disabled={isLoading}
             >
               {isLoading ? (
-                <span>Envoi du message...</span>
+                <span>{t('contact.form.sending')}</span>
               ) : (
                 <span className="flex items-center gap-1">
-                  Envoyer le message
+                  {t('contact.form.send')}
                   <TbMailForward size={20} />
                 </span>
               )}

@@ -1,16 +1,29 @@
 {
-  "name": "developer-portfolio",
-  "description": "Portfolio of Abu Said",
-  "version": "0.1.0",
+  "name": "altan-depeli-portfolio",
+  "description": "Portfolio professionnel d'Altan DEPELI - Développeur Web",
+  "version": "1.0.0",
   "private": true,
+  "author": "Altan DEPELI",
+  "keywords": [
+    "portfolio",
+    "développeur",
+    "web",
+    "react",
+    "nextjs",
+    "stage"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "vercel --prod",
+    "deploy:preview": "vercel",
+    "domain:add": "./scripts/setup-domain.sh",
+    "vercel:inspect": "vercel inspect"
   },
   "dependencies": {
-    "@emailjs/browser": "^4.3.1",
+    "@emailjs/browser": "^4.4.1",
     "@next/third-parties": "15.1.1",
     "@tsparticles/engine": "^3.8.1",
     "@tsparticles/react": "^3.0.0",
