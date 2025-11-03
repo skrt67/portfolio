@@ -75,39 +75,33 @@ export const en = {
       },
       {
         id: 2,
-        name: 'Sewing Website',
-        description: 'Platform for exchanging and booking sewing items. Complete system with category management, multi-role authentication, bookings and admin interface.',
-        role: 'Back-End Developer'
-      },
-      {
-        id: 3,
-        name: 'La Montagne des Singes',
-        description: 'Website for the La Montagne des Singes wildlife park created as part of a SAÉ. Multilingual site with species presentation, practical information and online ticketing.',
-        role: 'WordPress Developer'
-      },
-      {
-        id: 4,
         name: 'Football Jerseys Website',
         description: 'Presentation website for various football jerseys. Simple static HTML/CSS project.',
         role: 'Front-End Integrator'
       },
       {
-        id: 5,
+        id: 3,
         name: 'SIG Strasbourg Association',
         description: 'Multimedia communication project in partnership with SIG Strasbourg. Goal: strengthen the club\'s image through digital and print media.',
         role: 'Communication Manager / Web Designer'
       },
       {
-        id: 6,
+        id: 4,
         name: 'MusicFlow',
         description: 'Modern web music streaming application with intuitive user interface. Complete music library management, custom playlists, favorites system and user authentication.',
         role: 'Full Stack Developer'
       },
       {
-        id: 7,
+        id: 5,
         name: 'One Piece Adventure',
         description: 'Interactive website dedicated to the One Piece universe with mini-games, knowledge quizzes, pirate combat system and Grand Line exploration. Immersive interface for series fans.',
         role: 'Front-End Developer'
+      },
+      {
+        id: 6,
+        name: 'Vidova.me',
+        description: 'SaaS platform using AI to transform YouTube videos into multi-format viral content. Features including automatic transcription, generation of social media posts (Twitter, LinkedIn, TikTok, Instagram) and creation of SEO-optimized blog articles. Flexible pricing: free (3 videos/month), Pro (€14.99/month, unlimited videos) and Enterprise (custom).',
+        role: 'Full Stack Developer'
       }
     ]
   },

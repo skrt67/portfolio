@@ -70,44 +70,38 @@ export const fr = {
       {
         id: 1,
         name: 'Trash Game',
-        description: 'Jeu web interactif de tri des déchets réalisé dans le cadre d\'une SAÉ. Une expérience ludique pour sensibiliser au recyclage avec système de score et de niveaux.',
+        description: 'Jeu web interactif de tri des déchets réalisé dans le cadre d\u2019une SAÉ. Une expérience ludique pour sensibiliser au recyclage avec système de score et de niveaux.',
         role: 'Développeur Full Stack'
       },
       {
         id: 2,
-        name: 'Site de Couture',
-        description: 'Plateforme d\'échange et de réservation d\'objets de couture. Système complet avec gestion des catégories, authentification multi-rôles, réservations et interface d\'administration.',
-        role: 'Développeur Back-End'
-      },
-      {
-        id: 3,
-        name: 'La Montagne des Singes',
-        description: 'Site web pour le parc animalier de la Montagne des Singes réalisé dans le cadre d\'une SAÉ. Site multilingue avec présentation des espèces, informations pratiques et billetterie en ligne.',
-        role: 'Développeur WordPress'
-      },
-      {
-        id: 4,
         name: 'Site de maillots de foot',
         description: 'Site de présentation de divers maillots de football. Projet HTML/CSS statique simple.',
         role: 'Intégrateur Front-End'
       },
       {
-        id: 5,
+        id: 3,
         name: 'L\'association de la SIG Strasbourg',
-        description: 'Projet de communication plurimédia en partenariat avec la SIG Strasbourg. Objectif : renforcer l\'image du club à travers des supports digitaux et print.',
+        description: 'Projet de communication plurimédia en partenariat avec la SIG Strasbourg. Objectif : renforcer l\u2019image du club à travers des supports digitaux et print.',
         role: 'Chargé de communication / Webdesign'
       },
       {
-        id: 6,
+        id: 4,
         name: 'MusicFlow',
         description: 'Application web de streaming musical moderne avec interface utilisateur intuitive. Gestion complète de bibliothèque musicale, playlists personnalisées, système de favoris et authentification utilisateur.',
         role: 'Développeur Full Stack'
       },
       {
-        id: 7,
+        id: 5,
         name: 'One Piece Adventure',
         description: 'Site web interactif dédié à l\'univers One Piece avec mini-jeux, quiz de connaissances, système de combat de pirates et exploration de la Grand Line. Interface immersive pour les fans de la série.',
         role: 'Développeur Front-End'
+      },
+      {
+        id: 6,
+        name: 'Vidova.me',
+        description: 'Plateforme SaaS utilisant l\'IA pour transformer des vidéos YouTube en contenu viral multi-format. Fonctionnalités incluant transcription automatique, génération de posts pour réseaux sociaux (Twitter, LinkedIn, TikTok, Instagram) et création d\'articles de blog optimisés SEO. Tarifs flexibles : gratuit (3 vidéos/mois), Pro (14,99€/mois, vidéos illimitées) et Entreprise (sur mesure).',
+        role: 'Développeur Full Stack'
       }
     ]
   },
