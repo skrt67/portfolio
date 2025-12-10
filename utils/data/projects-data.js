@@ -19,12 +19,12 @@ export const projectsData = [
   },
   {
     id: 3,
-    name: 'Site de maillots de foot',
-    description: 'Site de présentation de divers maillots de football. Projet HTML/CSS statique simple.',
-    tools: ['HTML', 'CSS'],
-    role: 'Intégrateur Front-End',
+    name: 'Boutique E-commerce',
+    description: 'Site vitrine d\'une boutique réalisé en TypeScript. Projet frontend moderne avec interface utilisateur élégante.',
+    tools: ['TypeScript', 'React', 'Next.js'],
+    role: 'Développeur Front-End',
     code: '',
-    demo: 'https://depeli.etu.mmi-unistra.fr/sae203/index.php',
+    demo: 'https://front-jet-mu.vercel.app/',
   },
   {
     id: 4,
