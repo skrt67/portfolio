@@ -75,8 +75,8 @@ export const en = {
       },
       {
         id: 2,
-        name: 'Trash Game',
-        description: 'Interactive web game for waste sorting created as part of a SAÉ. A fun experience to raise awareness about recycling with scoring system and levels.',
+        name: 'Asano',
+        description: 'Project and task management web application inspired by Trello and Asana. Created as a school project, it allows creating boards, organizing tasks and team collaboration.',
         role: 'Full Stack Developer'
       },
       {
@@ -87,21 +87,9 @@ export const en = {
       },
       {
         id: 4,
-        name: 'SIG Strasbourg Association',
-        description: 'Multimedia communication project in partnership with SIG Strasbourg. Goal: strengthen the club\'s image through digital and print media.',
-        role: 'Communication Manager / Web Designer'
-      },
-      {
-        id: 5,
         name: 'MusicFlow',
         description: 'Modern web music streaming application with intuitive user interface. Complete music library management, custom playlists, favorites system and user authentication.',
         role: 'Full Stack Developer'
-      },
-      {
-        id: 6,
-        name: 'One Piece Adventure',
-        description: 'Interactive website dedicated to the One Piece universe with mini-games, knowledge quizzes, pirate combat system and Grand Line exploration. Immersive interface for series fans.',
-        role: 'Front-End Developer'
       }
     ]
   },
