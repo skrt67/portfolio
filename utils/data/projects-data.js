@@ -44,4 +44,13 @@ export const projectsData = [
     code: '',
     demo: 'https://iteg-electricite.fr/',
   },
+  {
+    id: 6,
+    name: 'Burger Restaurant',
+    description: 'Site web de restaurant moderne entièrement traduit en français. Template Bootstrap responsive avec pages de menu, réservation, contact, équipe et témoignages clients. Interface élégante avec animations et design moderne.',
+    tools: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+    role: 'Développeur Front-End',
+    code: 'https://github.com/skrt67/burger',
+    demo: 'https://burger-khaki-sigma.vercel.app/',
+  },
 ];
