@@ -96,6 +96,12 @@ export const fr = {
         name: 'Iteg Électricité',
         description: 'Site web professionnel réalisé durant mon stage chez Iteg, entreprise spécialisée dans l\'installation électrique et la domotique. Site vitrine présentant les services et réalisations de l\'entreprise.',
         role: 'Développeur Web - Stagiaire'
+      },
+      {
+        id: 6,
+        name: 'Burger Restaurant',
+        description: 'Site web de restaurant moderne entièrement traduit en français. Template Bootstrap responsive avec pages de menu, réservation, contact, équipe et témoignages clients. Interface élégante avec animations et design moderne.',
+        role: 'Développeur Front-End'
       }
     ]
   },

@@ -96,6 +96,12 @@ export const en = {
         name: 'Iteg Électricité',
         description: 'Professional website created during my internship at Iteg, a company specializing in electrical installation and home automation. Showcase website presenting the company\'s services and achievements.',
         role: 'Web Developer - Intern'
+      },
+      {
+        id: 6,
+        name: 'Burger Restaurant',
+        description: 'Modern restaurant website fully translated into French. Responsive Bootstrap template with menu, reservation, contact, team and customer testimonial pages. Elegant interface with animations and modern design.',
+        role: 'Front-End Developer'
       }
     ]
   },
