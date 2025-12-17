@@ -27,15 +27,6 @@ export const projectsData = [
     demo: 'https://front-jet-mu.vercel.app/',
   },
   {
-    id: 4,
-    name: 'MusicFlow',
-    description: 'Application web de streaming musical moderne avec interface utilisateur intuitive. Gestion complète de bibliothèque musicale, playlists personnalisées, système de favoris et authentification utilisateur.',
-    tools: ['React', 'Next.js', 'JavaScript', 'CSS', 'Vercel'],
-    role: 'Développeur Full Stack',
-    code: '',
-    demo: 'https://musicapp-nu-flame.vercel.app/',
-  },
-  {
     id: 5,
     name: 'Iteg Électricité',
     description: 'Site web professionnel réalisé durant mon stage chez Iteg, entreprise spécialisée dans l\'installation électrique et la domotique. Site vitrine présentant les services et réalisations de l\'entreprise.',

@@ -86,12 +86,6 @@ export const en = {
         role: 'Front-End Developer'
       },
       {
-        id: 4,
-        name: 'MusicFlow',
-        description: 'Modern web music streaming application with intuitive user interface. Complete music library management, custom playlists, favorites system and user authentication.',
-        role: 'Full Stack Developer'
-      },
-      {
         id: 5,
         name: 'Iteg Électricité',
         description: 'Professional website created during my internship at Iteg, a company specializing in electrical installation and home automation. Showcase website presenting the company\'s services and achievements.',
