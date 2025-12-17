@@ -81,9 +81,9 @@ export const en = {
       },
       {
         id: 3,
-        name: 'Football Jerseys Website',
-        description: 'Presentation website for various football jerseys. Simple static HTML/CSS project.',
-        role: 'Front-End Integrator'
+        name: 'E-commerce Store',
+        description: 'Showcase website for a store built in TypeScript. Modern frontend project with elegant user interface.',
+        role: 'Front-End Developer'
       },
       {
         id: 4,

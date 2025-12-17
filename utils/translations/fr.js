@@ -81,9 +81,9 @@ export const fr = {
       },
       {
         id: 3,
-        name: 'Site de maillots de foot',
-        description: 'Site de présentation de divers maillots de football. Projet HTML/CSS statique simple.',
-        role: 'Intégrateur Front-End'
+        name: 'Boutique E-commerce',
+        description: 'Site vitrine d\'une boutique réalisé en TypeScript. Projet frontend moderne avec interface utilisateur élégante.',
+        role: 'Développeur Front-End'
       },
       {
         id: 4,
