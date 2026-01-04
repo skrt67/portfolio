@@ -51,5 +51,6 @@ export const projectsData = [
     tools: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
     role: 'Développeur Front-End',
     code: 'https://github.com/skrt67/burger',
+    demo: 'https://burger-khaki-sigma.vercel.app/',
   },
 ];

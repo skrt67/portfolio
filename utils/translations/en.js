@@ -69,18 +69,24 @@ export const en = {
     projectsList: [
       {
         id: 1,
+        name: 'Inside Grand Prix F1',
+        description: 'Website dedicated to Formula 1 built with WordPress. Information platform covering news, results, drivers and Formula 1 teams. Modern and responsive design for motorsport enthusiasts.',
+        role: 'WordPress Developer'
+      },
+      {
+        id: 2,
         name: 'Vidova.me',
         description: 'SaaS platform using AI to transform YouTube videos into multi-format viral content. Features including automatic transcription, generation of social media posts (Twitter, LinkedIn, TikTok, Instagram) and creation of SEO-optimized blog articles. Flexible pricing: free (3 videos/month), Pro (€14.99/month, unlimited videos) and Enterprise (custom).',
         role: 'Full Stack Developer'
       },
       {
-        id: 2,
+        id: 3,
         name: 'Asano',
         description: 'Project and task management web application inspired by Trello and Asana. Created as a school project, it allows creating boards, organizing tasks and team collaboration.',
         role: 'Full Stack Developer'
       },
       {
-        id: 3,
+        id: 4,
         name: 'E-commerce Store',
         description: 'Showcase website for a store built in TypeScript. Modern frontend project with elegant user interface.',
         role: 'Front-End Developer'
