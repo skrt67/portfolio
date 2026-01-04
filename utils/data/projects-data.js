@@ -1,6 +1,15 @@
 export const projectsData = [
   {
     id: 1,
+    name: 'Inside Grand Prix F1',
+    description: 'Site web dédié à la Formule 1 réalisé avec WordPress. Plateforme d\'information couvrant l\'actualité, les résultats, les pilotes et les écuries de Formule 1. Design moderne et responsive pour les passionnés de sport automobile.',
+    tools: ['WordPress', 'PHP', 'CSS', 'JavaScript'],
+    role: 'Développeur WordPress',
+    code: '',
+    demo: 'https://dev-inside-grand-prix-f1.pantheonsite.io/',
+  },
+  {
+    id: 2,
     name: 'Vidova.me',
     description: 'Plateforme SaaS utilisant l\'IA pour transformer des vidéos YouTube en contenu viral multi-format. Fonctionnalités incluant transcription automatique, génération de posts pour réseaux sociaux (Twitter, LinkedIn, TikTok, Instagram) et création d\'articles de blog optimisés SEO. Tarifs flexibles : gratuit (3 vidéos/mois), Pro (14,99€/mois, vidéos illimitées) et Entreprise (sur mesure).',
     tools: ['React', 'Next.js', 'JavaScript', 'CSS', 'IA', 'API'],
@@ -9,7 +18,7 @@ export const projectsData = [
     demo: 'https://vidova.me/',
   },
   {
-    id: 2,
+    id: 3,
     name: 'Asano',
     description: 'Application web de gestion de projets et tâches inspirée de Trello et Asana. Réalisée dans le cadre d\'un projet scolaire, elle permet de créer des tableaux, organiser des tâches et collaborer en équipe.',
     tools: ['React', 'Laravel', 'PHP', 'JavaScript', 'API REST'],
@@ -18,7 +27,7 @@ export const projectsData = [
     demo: 'https://asano.depeli.etu.mmi-unistra.fr/',
   },
   {
-    id: 3,
+    id: 4,
     name: 'Boutique E-commerce',
     description: 'Site vitrine d\'une boutique réalisé en TypeScript. Projet frontend moderne avec interface utilisateur élégante.',
     tools: ['TypeScript', 'React', 'Next.js'],
