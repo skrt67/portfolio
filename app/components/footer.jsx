@@ -1,8 +1,6 @@
 "use client";
 
 import Link from 'next/link';
-import { CgGitFork } from "react-icons/cg";
-import { IoStar } from "react-icons/io5";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 function Footer() {
@@ -18,24 +16,6 @@ function Footer() {
           <p className="text-sm">
             © {t('footer.madeWith')} <Link target="_blank" href="https://www.linkedin.com/in/altan-depeli-508a052b9/" className="text-[#16f2b3]">Altan DEPELI</Link>
           </p>
-          <div className="flex items-center gap-5">
-            <Link
-              target="_blank"
-              href="https://github.com/skrt67/portfolio"
-              className="flex items-center gap-2 uppercase hover:text-[#16f2b3]"
-            >
-              <IoStar />
-              <span>Star</span>
-            </Link>
-            <Link
-              target="_blank"
-              href="https://github.com/skrt67/portfolio/fork"
-              className="flex items-center gap-2 uppercase hover:text-[#16f2b3]"
-            >
-              <CgGitFork />
-              <span>Fork</span>
-            </Link>
-          </div>
         </div>
       </div>
     </div>
