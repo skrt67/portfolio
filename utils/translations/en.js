@@ -81,6 +81,12 @@ export const en = {
       },
       {
         id: 3,
+        name: 'Asano',
+        description: 'Project and task management web application inspired by Trello and Asana. Created as a school project, it allows creating boards, organizing tasks and team collaboration.',
+        role: 'Full Stack Developer'
+      },
+      {
+        id: 4,
         name: 'E-commerce Store',
         description: 'Showcase website for a store built in TypeScript. Modern frontend project with elegant user interface.',
         role: 'Front-End Developer'

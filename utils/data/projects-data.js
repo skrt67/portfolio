@@ -19,6 +19,15 @@ export const projectsData = [
   },
   {
     id: 3,
+    name: 'Asano',
+    description: 'Application web de gestion de projets et tâches inspirée de Trello et Asana. Réalisée dans le cadre d\'un projet scolaire, elle permet de créer des tableaux, organiser des tâches et collaborer en équipe.',
+    tools: ['React', 'Laravel', 'PHP', 'JavaScript', 'API REST'],
+    role: 'Développeur Full Stack',
+    code: '',
+    demo: 'https://asano.depeli.etu.mmi-unistra.fr/',
+  },
+  {
+    id: 4,
     name: 'Boutique E-commerce',
     description: 'Site vitrine d\'une boutique réalisé en TypeScript. Projet frontend moderne avec interface utilisateur élégante.',
     tools: ['TypeScript', 'React', 'Next.js'],
